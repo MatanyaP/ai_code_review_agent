@@ -1,18 +1,5 @@
 # Code Review Agent
 
-> **Home Assignment - Full-Stack Developer Position**
-
-A production-ready, full-stack web application that performs intelligent code review using Google's Gemini AI. The system analyzes single files or entire codebases and provides structured feedback covering security, performance, style, and logic issues.
-
-## Assignment Overview
-
-This project demonstrates proficiency in:
-- **Full-Stack Development**: React (TypeScript) + Python (FastAPI)
-- **AI Integration**: Google Gemini API with structured output processing
-- **Modern DevOps**: Docker containerization with multi-stage builds
-- **Professional Architecture**: Scalable, maintainable, and secure code structure
-- **User Experience**: Intuitive drag-and-drop interface with real-time feedback
-
 ## Features
 
 ### AI Agent Capabilities
