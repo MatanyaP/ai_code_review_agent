@@ -40,7 +40,7 @@
 **Steps:**
 1. **Clone and setup environment**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/MatanyaP/ai_code_review_agent
    cd code_review_agent
    cp .env.example .env
    # Edit .env and add your Gemini API key
