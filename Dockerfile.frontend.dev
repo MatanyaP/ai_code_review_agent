@@ -1,0 +1,27 @@
+# Development Dockerfile for Frontend with hot reloading
+FROM node:18-alpine
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies for better development experience
+RUN apk add --no-cache git
+
+# Copy package files
+COPY frontend/package*.json ./
+
+# Install all dependencies (including dev dependencies)
+RUN npm install
+
+# Create non-root user
+RUN addgroup -g 1000 appuser && adduser -u 1000 -G appuser -s /bin/sh -D appuser
+RUN chown -R appuser:appuser /app
+
+# Switch to non-root user
+USER appuser
+
+# Expose port
+EXPOSE 3000
+
+# Start development server with hot reloading
+CMD ["npm", "start"]
